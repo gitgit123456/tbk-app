@@ -1,0 +1,140 @@
+
+.listItems {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-top: 91px;
+    margin-bottom: 30px;
+}
+.homeListItems {
+    background-color: rgba(255, 255, 255, 0.95);
+    /*margin-top: 91px;*/
+}
+.goodsOne {
+    padding: 15px 12px;
+    border-top: 1px solid #F1F1F1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.goodsOne .cover-image {
+    width: 65%;
+    height: 65%;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+}
+
+.goodsOne .cover-image .tags-img {
+    width: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.goodsOne .cover-image .image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+.goodsOne .item-info {
+    margin-left: .4rem;
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.goodsOne .item-info .title {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 1.04rem;
+    line-height: 1.5;
+    color: #333;
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.goodsOne .item-info p.rec {
+    height: 10px;
+    line-height: 21px;
+    color: #FB5413;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.goodsOne .count {
+    color: #C7C4C4;
+    font-size: 12px;
+    margin-top: -0.88rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.goodsOne .count .alreadyBuy {
+    color: #B1AEAE;
+}
+.goodsOne .item-info .coupon {
+    height: 1.24rem;
+    line-height: 24px;
+    margin-top: 8px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.goodsOne .item-info .coupon .price {
+    color: #FC3D37;
+    font-size: 12px;
+    display: inline-block;
+}
+.goodsOne .item-info .coupon .price b {
+    font-size: 22px;
+}
+
+.goodsOne .item-info .title .tabsImg {
+    width: 13px;
+    margin-right: 5px;
+}
+
+
+/**/
+.am-grid.index_activity_grid.am-grid-square {
+    margin-top: 10px;
+}
+.am-grid.index_activity_grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+    margin-top: 9px;
+    width: 99%!important;
+    height: 100%!important;
+}
+.am-wingblank.am-wingblank-lg {
+    margin-left: 0px;
+    margin-right:  0px;
+    margin-top: 45px;
+}
+.ItemSwipe{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -45px;
+}
+
+/**/
+.am-whitespace.am-whitespace-lg {
+    height: 3px;
+}
+
+.am-notice-bar {
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 36px;
+    color: #f707e2;
+    display: -ms-flexbox;
+    display: flex;
+}
+

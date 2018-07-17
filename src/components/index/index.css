@@ -22,6 +22,7 @@
     vertical-align: top;
     display: inline-block;
     position: relative;
+    max-width: 123px;
 }
 
 .goodsOne .cover-image .tags-img {
@@ -56,6 +57,7 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .goodsOne .item-info p.rec {
     height: 10px;

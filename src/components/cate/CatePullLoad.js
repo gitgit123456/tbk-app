@@ -52,7 +52,8 @@ class CatePullLoad extends React.Component{
         if(STATS.loading === this.state.action){
             return false
         }
-        if(this.state.index === this.state.totalCount){
+        // if(this.state.index === this.state.totalCount){ 暂时屏蔽总条数限制
+        if(false){
             this.setState({
                 action: STATS.reset,
                 hasMore: false

@@ -2,9 +2,9 @@ import React from 'react';
 import IndexSearch from '../../common/IndexSearch';
 import "./nine.css"
 import $ from 'jquery';
-import CatePullLoad from '../../components/cate/CatePullLoad';
-import "../../components/cate/cate.css"
+import NinePullLoad from './NinePullLoad.js';
 import IndexFoot from '../../common/IndexFoot';
+
 
 
 class NineIndex extends React.Component{
@@ -88,32 +88,31 @@ class NineIndex extends React.Component{
         return (
             <div>
                 <IndexSearch></IndexSearch>
-                {/*<div>*/}
-                    {/*<div className="tabs-nine">*/}
-                        {/*<div className="tabs-nine-img_9">*/}
-                            {/*<img src={this.state.pathname.includes("/9")?"http://shuzibika.com/tbk/cate1.png":"http://shuzibika.com/tbk/cate.png"}   alt=""/>*/}
-                            {/*<a  onClick={this.onChange.bind(this,0)} className={this.state.active[0]}>9.9包邮</a>*/}
-                        {/*</div>*/}
-                        {/*<div className="tabs-nine-img_20">*/}
-                            {/*<img src={this.state.pathname.includes("/9")?"http://shuzibika.com/tbk/cate1.png":"http://shuzibika.com/tbk/cate.png"}   alt=""/>*/}
-                            {/*<a  onClick={this.onChange.bind(this,1)}  className={this.state.active[1]}>20元封顶</a>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
-                    {/*<div className="tabs-nine-sort">*/}
-                        {/*<a onClick={this.onChange.bind(this)} className="tab-nine-sort-active">最新</a>*/}
-                        {/*<a onClick={this.onChange.bind(this)}  className="">    价格  <i className="icon_sort_price"></i></a>*/}
-                        {/*<a onClick={this.onChange.bind(this)} className="">     销量   <i className="icon_sort_price"></i></a>*/}
-                        {/*<a onClick={this.onChange.bind(this)}  className="">    人气  <i className="icon_sort_price"></i></a>*/}
-                    {/*</div>*/}
-                {/*</div>*/}
-                    <CatePullLoad
+                <div>
+                    <div className="tabs-nine">
+                        <div className="tabs-nine-img_9">
+                            <img src={this.state.pathname.includes("/9")?"http://shuzibika.com/tbk/cate1.png":"http://shuzibika.com/tbk/cate.png"}   alt=""/>
+                            <a  onClick={this.onChange.bind(this,0)} className={this.state.active[0]}>9.9包邮</a>
+                        </div>
+                        <div className="tabs-nine-img_20">
+                            <img src={this.state.pathname.includes("/9")?"http://shuzibika.com/tbk/cate1.png":"http://shuzibika.com/tbk/cate.png"}   alt=""/>
+                            <a  onClick={this.onChange.bind(this,1)}  className={this.state.active[1]}>20元封顶</a>
+                        </div>
+                    </div>
+                    <div className="tabs-nine-sort">
+                        <a onClick={this.onChange.bind(this)} className="tab-nine-sort-active">最新</a>
+                        <a onClick={this.onChange.bind(this)}  className="">    价格  <i className="icon_sort_price"></i></a>
+                        <a onClick={this.onChange.bind(this)} className="">     销量   <i className="icon_sort_price"></i></a>
+                        <a onClick={this.onChange.bind(this)}  className="">    人气  <i className="icon_sort_price"></i></a>
+                    </div>
+                </div>
+                    <NinePullLoad
                         reLoad={this.reLoad.bind(this)}
                         totalCount={this.state.totalCount}
                         productList={this.state.productList}
                         pageNo={this.state.pageNo}
                     >
-
-                    </CatePullLoad>
+                    </NinePullLoad>
                 <IndexFoot></IndexFoot>
             </div>
         );
